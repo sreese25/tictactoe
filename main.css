@@ -1,0 +1,80 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#board {
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+td:first-child {
+  border-left: none;
+}
+
+td:last-child {
+  border-right: none;
+}
+
+tr:first-child td {
+  border-top: none;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+td:has(.xspace),
+td:has(.ospace) {
+  cursor: default;
+}
+
+.xspace,
+.ospace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.xspace,
+.xpiece {
+    color: red;
+}
+
+.ospace,
+.opiece {
+    color: blue;
+}
+
+#status {
+    padding: 30px;
+    font-size: 28px;
+}
+
+.statusDisplay{
+    display: none;
+}
+
+#status-player1Turn {
+    display: block;
+    color: red;
+}
+
+#status-player2Turn {
+    color: blue;
+}

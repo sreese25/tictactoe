@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <script src="game.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <h1>Tic-Tac-Toe</h1>
+            <table id="board">
+                <tbody>
+                    <tr>
+                        <td class='space' id="row1-co1" row="0" col="0"></td>
+                        <td class='space' id="row1-co2" row="0" col="1"></td>
+                        <td class='space' id="row1-co3" row="0" col="2"></td>
+                    </tr>
+                    <tr>
+                        <td class='space' id="row2-co1" row="1" col="0"></td>
+                        <td class='space' id="row2-co2" row="1" col="1"></td>
+                        <td class='space' id="row2-co3" row="1" col="2"></td>
+                    </tr>
+                    <tr>
+                        <td class='space' id="row3-co1" row="2" col="0"></td>
+                        <td class='space' id="row3-co2" row="2" col="1"></td>
+                        <td class='space' id="row3-co3" row="2" col="2"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="status">
+                <div class='statusDisplay' id="status-player1Turn">Player 1 Turn: <b>X</b></div>
+                <div class='statusDisplay' id="status-player2Turn">Player 2 Turn: <b>O</b></div>
+                <div class='statusDisplay' id="status-win">Game Over: Winner</div>
+                <div class='statusDisplay' id="status-draw">Game Over: Draw</div>
+            </div>
+        </div>
+    </body>
+</html>
